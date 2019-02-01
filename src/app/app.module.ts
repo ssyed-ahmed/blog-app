@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 import { ROUTING } from './app.routing'
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
 import { RootComponent } from './root/root.component';
 import { LoginComponent } from './login/login.component';
 
@@ -15,7 +15,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     ROUTING,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [RootComponent]
